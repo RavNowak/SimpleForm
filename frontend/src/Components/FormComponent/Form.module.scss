@@ -1,0 +1,50 @@
+@import '../../Styles/Input.scss';
+@import '../../Styles/Button.scss';
+@import '../../Styles/Color.scss';
+
+$errorColor: darkred;
+
+.container {
+  width: 25%;
+  height: 75%;
+  padding: 30px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: whitesmoke;
+}
+
+.form {
+  width: 100%;
+}
+
+.singleInputField {
+  width: 100%;
+  margin: 10px 0;
+}
+
+.title {
+  width: 100%;
+  margin-bottom: 10px;
+  color: $mainTheme;
+}
+
+.label {
+  color: $mainTheme;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.errorInfo {
+  font-size: 12px;
+  margin-top: 2px;
+  color: $errorColor;
+  white-space: pre-wrap;
+}
+
+@media screen and (max-width: 900px) {
+  .container {
+    width: 60%;
+  }
+}

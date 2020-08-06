@@ -1,0 +1,24 @@
+@import './Color.scss';
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  cursor: pointer;
+}
+
+.themeInput {
+  margin: 0px 0;
+  padding: 7px 1px;
+  width: calc(100% - 2px);
+  font-size: 15px;
+  color: black;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid $mainTheme;
+}
+
+.themeInput:focus {
+  outline: none;
+}
+
+.themeInput:focus::placeholder {
+  color: transparent;
+}
